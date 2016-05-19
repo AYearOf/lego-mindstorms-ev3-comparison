@@ -22,7 +22,11 @@ you have bought LEGO Mindstorms EV3 Home Edition (31313) and the Education
 Expansion Set (45560).  So you can make all robots that can be made with
 the Education Core Set (45544) + Education Expansion Set.
 """
-import sys
+import codecs, locale, sys
+ 
+# encoding = sys.stdout.encoding or locale.getpreferredencoding()
+# encoder = codecs.getwriter(encoding)
+# sys.stdout = encoder(sys.stdout,'backslashreplace')
 
 files = sys.argv[1:]
 part_list = {}
